@@ -3,33 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ChainPop — a fast, strategic chain-reaction puzzle game by NextWave Apps.">
+  <meta name="description" content="ChainPop is a strategic chain-reaction puzzle game packed with escalating boards, special balls, power-ups, and hundreds of levels.">
   <meta name="theme-color" content="#071312">
-  <title>ChainPop | Support</title>
+  <title>ChainPop — Tap. React. Clear the board.</title>
   <link rel="icon" href="assets/favicon.png">
   <style>
-    :root { color-scheme: dark; --cyan:#08e4ed; --pink:#d150ff; --ink:#071312; --card:#10201f; --text:#e9ffff; --muted:#a9bcbb; --bg:#2c1e37 }
+    :root { color-scheme:dark; --cyan:#08e4ed; --pink:#d150ff; --ink:#071312; --card:#10201f; --text:#efffff; --muted:#adc3c2; --line:#28504e; }
     * { box-sizing:border-box; }
-    body { margin:0; min-height:100vh; font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; color:var(--text); background:var(--bg); }
-    main { width:min(920px,calc(100% - 32px)); margin:auto; padding:56px 0 36px; }
-    .hero { display:grid; grid-template-columns:140px 1fr; gap:30px; align-items:center; padding:34px; border:1px solid #1c7779; border-radius:28px; background:rgba(9,24,23,.88); box-shadow:0 22px 70px #0008; }
-    .icon { width:140px; height:140px; border-radius:30px; box-shadow:0 0 38px #08e4ed55; }
-    h1 { margin:0; font-size:clamp(2.5rem,8vw,5rem); line-height:1; letter-spacing:-.06em; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; min-height:100vh; font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--text); background:radial-gradient(circle at 12% 10%,#0b5557 0,transparent 30rem),radial-gradient(circle at 92% 62%,#321449 0,transparent 32rem),var(--ink); }
+    a { color:inherit; }
+    main,.footer-inner { width:min(1000px,calc(100% - 32px)); margin:auto; }
+    main { padding:56px 0 48px; }
+    .hero { display:grid; grid-template-columns:150px 1fr; gap:34px; align-items:center; padding:clamp(26px,5vw,48px); border:1px solid #1c7779; border-radius:30px; background:rgba(9,24,23,.9); box-shadow:0 22px 70px #0008; }
+    .icon { width:150px; height:150px; border-radius:32px; box-shadow:0 0 42px #08e4ed55; }
+    h1 { margin:0; font-size:clamp(3rem,9vw,5.8rem); line-height:.95; letter-spacing:-.065em; }
     h1 span { color:var(--cyan); }
-    .tagline { max-width:590px; margin:16px 0 24px; color:var(--muted); font-size:1.15rem; }
-    .buttons { display:flex; flex-wrap:wrap; gap:12px; }
-    a.button { display:inline-block; padding:11px 20px; border-radius:999px; color:#001615; background:var(--cyan); font-weight:800; text-decoration:none; }
-    a.button.alt { color:var(--text); background:#342044; border:1px solid var(--pink); }
-    .features { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:18px 0; }
-    .feature,.support { padding:22px; border:1px solid #274140; border-radius:20px; background:rgba(16,32,31,.9); }
-    .feature strong { display:block; color:var(--cyan); font-size:1.05rem; }
-    .feature p { margin:6px 0 0; color:var(--muted); }
-    .support { text-align:center; }
-    .support h2 { margin:0 0 6px; }
-    .support p { margin:0 0 14px; color:var(--muted); }
-    footer { padding-top:24px; text-align:center; color:#78908e; font-size:.9rem; }
-    footer a { color:#bde7e5; }
-    @media (max-width:650px) { main{padding-top:24px}.hero{grid-template-columns:1fr;text-align:center;padding:26px}.icon{margin:auto;width:112px;height:112px}.buttons{justify-content:center}.features{grid-template-columns:1fr} }
+    .tagline { max-width:650px; margin:18px 0 24px; color:var(--muted); font-size:clamp(1.08rem,2vw,1.28rem); }
+    .button { display:inline-block; padding:12px 21px; border-radius:999px; color:#001615; background:var(--cyan); font-weight:850; text-decoration:none; box-shadow:0 0 22px #08e4ed2f; }
+    .intro { max-width:780px; margin:42px auto 28px; text-align:center; }
+    .intro h2 { margin:0 0 10px; font-size:clamp(1.8rem,5vw,3rem); }
+    .intro p { margin:0; color:var(--muted); font-size:1.08rem; }
+    .features { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    .feature { padding:25px; border:1px solid var(--line); border-radius:21px; background:rgba(16,32,31,.92); }
+    .feature strong { display:block; color:var(--cyan); font-size:1.1rem; }
+    .feature p { margin:7px 0 0; color:var(--muted); }
+    footer { border-top:1px solid #183735; background:rgba(3,13,13,.72); }
+    .footer-inner { display:grid; grid-template-columns:1fr auto; gap:26px; align-items:end; padding:34px 0 38px; }
+    .support h2 { margin:0 0 5px; font-size:1.15rem; }
+    .support p { margin:0 0 10px; color:var(--muted); }
+    .support a { color:var(--cyan); }
+    .legal { text-align:right; color:#8fa5a3; font-size:.92rem; }
+    .legal nav { display:flex; justify-content:flex-end; gap:16px; margin-bottom:7px; }
+    .legal a { color:#c9eeee; }
+    @media (max-width:680px) { main{padding-top:24px}.hero{grid-template-columns:1fr;text-align:center}.icon{margin:auto;width:116px;height:116px}.features{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;align-items:start}.legal{text-align:left}.legal nav{justify-content:flex-start} }
   </style>
 </head>
 <body>
@@ -38,27 +45,36 @@
       <img class="icon" src="assets/icon.png" alt="ChainPop app icon">
       <div>
         <h1>Chain<span>Pop</span></h1>
-        <p class="tagline">Tap smart, trigger explosive chain reactions, master special power-ups, and climb through hundreds of increasingly intense puzzle levels.</p>
-        <div class="buttons">
-          <a class="button" href="mailto:nextwaveclub.us@gmail.com?subject=ChainPop%20Support">Get Support</a>
-          <a class="button alt" href="https://emperorx3m.github.io/chainpop/privacy.html">Privacy Policy</a>
-        </div>
+        <p class="tagline">A strategic chain-reaction puzzle where every tap counts. Lower the numbers, trigger precisely timed reactions, and clear the board before your moves—or the clock—run out.</p>
+        <a class="button" href="#gameplay">Discover the game</a>
       </div>
     </section>
 
+    <section class="intro" id="gameplay">
+      <h2>Small taps. Huge reactions.</h2>
+      <p>ChainPop starts simple, then steadily expands into larger boards and tougher decisions. Read the numbers, choose the right target, and turn one smart move into a satisfying cascade.</p>
+    </section>
+
     <section class="features" aria-label="Game features">
-      <article class="feature"><strong>Strategic reactions</strong><p>Plan each tap and build satisfying chains.</p></article>
-      <article class="feature"><strong>Power up</strong><p>Deploy bombs, rainbow balls, electric hits, and more.</p></article>
-      <article class="feature"><strong>Keep climbing</strong><p>New board sizes and challenges keep every level fresh.</p></article>
+      <article class="feature"><strong>Think before you pop</strong><p>Each board is a compact strategy challenge. Spend your limited moves carefully and make every reaction work for you.</p></article>
+      <article class="feature"><strong>Master special balls</strong><p>Bombs, electric balls, rainbow balls, and durable blockers reshape the board and open new ways to win.</p></article>
+      <article class="feature"><strong>Rise through 1,000 levels</strong><p>Boards grow gradually from approachable grids into intense challenges, with timed levels and fresh layouts along the way.</p></article>
+      <article class="feature"><strong>Build your best run</strong><p>Earn stars and PopCoins, stock useful power-ups, customize your look, and compete for your highest level on Google Play Games.</p></article>
     </section>
-
-    <section class="support">
-      <h2>Need help?</h2>
-      <p>Questions, purchase issues, feedback, or bug reports—we’re ready to help.</p>
-      <a class="button" href="mailto:nextwaveclub.us@gmail.com?subject=ChainPop%20Support">nextwaveclub.us@gmail.com</a>
-    </section>
-
-    <footer>© 2026 NextWave Apps · <a href="https://emperorx3m.github.io/chainpop/privacy.html">Privacy</a></footer>
   </main>
+
+  <footer>
+    <div class="footer-inner">
+      <section class="support" aria-labelledby="support-title">
+        <h2 id="support-title">Need help with ChainPop?</h2>
+        <p>For gameplay questions, purchase issues, feedback, or bug reports, contact our support team.</p>
+        <a href="mailto:nextwaveclub.us@gmail.com?subject=ChainPop%20Support">nextwaveclub.us@gmail.com</a>
+      </section>
+      <div class="legal">
+        <nav aria-label="Legal links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+        <div>© 2026 NextWave Apps. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
